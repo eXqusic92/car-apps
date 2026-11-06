@@ -212,7 +212,10 @@ start. Until then Diagnostics says *Flag on, but icam2proxy offers no video buff
 writes no das lines, so the player (from 1.1.2) adds both, the app's and `oap_drive_recorder` (it keeps each das
 file's first copy in `/var/opt/iteriodev-drplay/das-orig/`); restart the head unit once after the player's update. The car mounts a USB stick read-only for its media player;
 the player (from 1.1.3) makes it writable while the app's Copy to USB page is open or a copy runs, and read-only
-again 20 s after (`usb-rw.sh`).
+again 20 s after (`usb-rw.sh`). BMW gives the camera service and its group 1 GB of /var/opt for clips (`/usr/bin/quotaset.sh`,
+two 476 MB clips of all cameras at 60 s + 30 s); the player (from 1.1.4) raises both hard limits to 4.5 GB at its start,
+the 4 GB of clips it keeps + one being written. BMW's 1 GB again, as root:
+`setquota -g mgu_driverec 0 1048576 0 0 /var/opt; setquota -u ent_icam2proxy 0 1048576 0 0 /var/opt`.
 
 ## What is in this repository
 

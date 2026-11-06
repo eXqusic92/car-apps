@@ -202,7 +202,8 @@ it and nothing is recorded.
 
 The player (`iteriodev-drplay.service`, uid 3912, no internet) plays the clips through the GPU renderer, makes the
 thumbnails, locks, deletes and replaces the oldest clips, and copies to a USB stick: a whole clip as recorded, or one
-camera as an MP4 with the date, time and speed on it. Clips stay in the car's own Drive Recorder folder; *Lock* moves
+camera as an MP4 with the date, time and speed on it; several views of a clip at once (ticks), or every clip with
+**Export all** on the Clips tab (from 2.3.13), copied one after another. Clips stay in the car's own Drive Recorder folder; *Lock* moves
 one into its `locked/` folder.
 
 **Install:** in the Store, **Drive Recorder** -> *Install* (it installs the player too), then restart the head unit

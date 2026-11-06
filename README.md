@@ -189,8 +189,10 @@ top of `screencast.js`.
 > [!NOTE]
 > **iDrive 7, car-tested** (2.3.6 with the player 1.1.2, a 2021 G20 M340i, MGU18, 360° cameras, no BMW online
 > services): it installs, starts, opens all its pages, and after the player's provisioning lines and one restart of
-> the head unit the Drive Recorder runs. Not tested on iDrive 7 yet: saving and watching clips, Copy to USB, a car
-> with BMW's online services (its provisioning then comes from BMW, not only from the das files).
+> the head unit the Drive Recorder runs and saves clips. 2.3.7: the camera check no longer misses *All cameras* while
+> iDrive 7's camera unit is still starting (it is up about 10 s after the app asks; every car checks its cameras once
+> more). Not tested on iDrive 7 yet: watching clips, Copy to USB, a car with BMW's online services (its provisioning
+> then comes from BMW, not only from the das files).
 
 The app asks the car's camera unit for its Drive Recorder mode at every start (Settings can switch that off) and
 keeps the last 30 s; *Save clip* on the Record page writes the 20 s before and the 10 s after (Settings: *Clip

@@ -210,7 +210,9 @@ once. Most cars then need one more restart: the head unit's camera service turns
 second provisioning line (`oap_drive_recorder`, next to the app's own), which the player (1.1.1) adds at its first
 start. Until then Diagnostics says *Flag on, but icam2proxy offers no video buffer*. On iDrive 7 the deploy tool
 writes no das lines, so the player (from 1.1.2) adds both, the app's and `oap_drive_recorder` (it keeps each das
-file's first copy in `/var/opt/iteriodev-drplay/das-orig/`); restart the head unit once after the player's update.
+file's first copy in `/var/opt/iteriodev-drplay/das-orig/`); restart the head unit once after the player's update. The car mounts a USB stick read-only for its media player;
+the player (from 1.1.3) makes it writable while the app's Copy to USB page is open or a copy runs, and read-only
+again 20 s after (`usb-rw.sh`).
 
 ## What is in this repository
 

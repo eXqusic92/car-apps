@@ -188,8 +188,8 @@ top of `screencast.js`.
 
 > [!WARNING]
 > **iDrive 7 (from 2.3.0) is untested:** the app has not opened on an iDrive 7 car yet. 2.3.0 did
-> not install there (its permissions; fixed in 2.3.1), 2.3.1 did not open (its SOME/IP manifest; fixed in 2.3.2), and 2.3.2 crashed after opening (2.3.3 logs
-> the crash). The package builds
+> not install there (its permissions; fixed in 2.3.1), 2.3.1 did not open (its SOME/IP manifest; fixed in 2.3.2), and 2.3.2-2.3.3 were stopped by the app manager
+> within 2 s of opening (2.3.4: the resource settings of the apps that run there). The package builds
 > against iDrive 7's app SDK and has its own iDrive 7 screens; whether an iDrive 7 head unit's camera service
 > (`icam2proxy`, its Drive Recorder video buffer) and the player's provisioning line work as on iDrive 8 is not known.
 

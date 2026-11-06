@@ -191,7 +191,8 @@ top of `screencast.js`.
 > services): it installs, starts, opens all its pages, and after the player's provisioning lines and one restart of
 > the head unit the Drive Recorder runs and saves clips. 2.3.7: the camera check no longer misses *All cameras* while
 > iDrive 7's camera unit is still starting (it is up about 10 s after the app asks; every car checks its cameras once
-> more). Not tested on iDrive 7 yet: watching clips, Copy to USB, a car with BMW's online services (its provisioning
+> more). 2.3.8: saves work again after a failed one (the buffer's window is set again after a reset). Not tested on
+> iDrive 7 yet: watching clips, Copy to USB, a car with BMW's online services (its provisioning
 > then comes from BMW, not only from the das files).
 
 The app asks the car's camera unit for its Drive Recorder mode at every start (Settings can switch that off) and

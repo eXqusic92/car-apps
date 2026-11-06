@@ -2,13 +2,13 @@
 
 Keeps the car's cameras recording and saves a clip when you ask; watch, lock, delete and copy clips to a USB stick while the car stands still. Over 4 GB the oldest unlocked clips are replaced. The Store installs the Drive Recorder player with it. The car must be coded for the Drive Recorder.
 
-Version 2.3.7 · iDrive 7 and iDrive 8 · package `oap-driverecorder-next` · [all apps and how to install](../../README.md)
+Version 2.3.8 · iDrive 7 and iDrive 8 · package `oap-driverecorder-next` · [all apps and how to install](../../README.md)
 
 > [!NOTE]
 > Car-tested (2.0.1, iDrive 8): recording, saving and watching clips. 2.3.0 did not start on the car (its manifest lacked what the new app host needs); 2.3.1 fixes that. Not tested on a car yet: the 2.2.0 screens, Copy to USB, and 2.3.1's new app host (the Store's, on iDrive 8 too). The car must be coded for the Drive Recorder; the Store installs the Drive Recorder player with the app.
 
 > [!NOTE]
-> **iDrive 7, car-tested** (2.3.6 with the player 1.1.2, a G20 without BMW's online services): it installs, starts, opens all its pages, and after the player's provisioning lines and one restart of the head unit the Drive Recorder runs; saving a clip works there too. 2.3.7: the camera check no longer misses *All cameras* while iDrive 7's camera unit is still starting (every car checks its cameras once more). Not tested on iDrive 7 yet: watching clips, Copy to USB, a car with BMW's online services.
+> **iDrive 7, car-tested** (2.3.6 with the player 1.1.2, a G20 without BMW's online services): it installs, starts, opens all its pages, and after the player's provisioning lines and one restart of the head unit the Drive Recorder runs; saving a clip works there too. 2.3.7: the camera check no longer misses *All cameras* while iDrive 7's camera unit is still starting (every car checks its cameras once more). 2.3.8: after a failed save the buffer was started again without its window, so every later save failed; the window is set again now, a save checks it first, and an empty "(0sec)" file is not reported as saved. Not tested on iDrive 7 yet: watching clips, Copy to USB, a car with BMW's online services.
 
 ## Screens
 
